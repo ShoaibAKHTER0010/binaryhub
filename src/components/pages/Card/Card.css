@@ -1,0 +1,118 @@
+.card {
+  margin-top: 100px;
+}
+.card-items-title {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+  align-items: center;
+  color: grey;
+  font-size: max(1vw, 12px);
+  
+}
+.card-items-item {
+  margin: 10px 0px;
+}
+.card-items-item img {
+  width: 50px;
+  border-radius: 5px;
+}
+.card hr {
+  height: 1px;
+  background-color: #e2e2e2;
+  border: none;
+}
+.cross {
+  cursor: pointer;
+  width: 20px;
+  border-radius: 30%;
+  height: 25px;
+}
+.cross :hover {
+  background-color: tomato;
+  width: 80%;
+  border-radius: 30%;
+  border: none;
+}
+.cross img {
+  width: 13px;
+  position: relative;
+  left: 4px;
+  top: 3px;
+}
+
+.card hr {
+  height: 1px;
+  background-color: #e2e2e2;
+  border: none;
+}
+.card-items-item.cross {
+  cursor: pointer;
+}
+.card-bottom {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  gap: max(12vw, 20px);
+}
+.card-total {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.card-total-details {
+  display: flex;
+  justify-content: space-between;
+  color: #555;
+}
+.card-total hr {
+  margin: 10px 0px;
+}
+.card-total button {
+  border: none;
+  color: white;
+  background-color: tomato;
+  width: max(15px, 200px);
+  padding: 12px 0px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.card-promocode {
+  flex: 1;
+}
+.card-promocode p {
+  color: #555;
+}
+.card-promocode-input {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eaeaea;
+  border-radius: 4px;
+}
+.card-promocode-input input {
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 10px;
+}
+.card-promocode-input button {
+  width: max(10vw, 130px);
+  padding: 10px;
+  background-color: black;
+  border: none;
+  color: white;
+  border-radius: 4px;
+}
+
+
+@media (max-width:750px){
+  .card-bottom{
+    flex-direction: column-reverse;
+
+  }
+  .card-promocode{
+    justify-content: start;
+  }
+}
